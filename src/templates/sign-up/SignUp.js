@@ -65,7 +65,7 @@ export default function SignUp() {
     email: '',
     password: ''
   });
-  const URL = 'http://localhost:3010/api/auth/user';
+  const URL = 'https://backendnode-production-214f.up.railway.app/api/auth/user';
 
   const handleNew = () => {
 

@@ -122,7 +122,7 @@ const ListProducts = ({ rowlibros }) => {
     edicion: '',
     accion: 'list'
   });
-  const URL = 'http://localhost:3010/api/libros';
+  const URL = 'https://backendnode-production-214f.up.railway.app/api/libros';
 
 
   const handleLogout = () => {

@@ -8,6 +8,6 @@ import 'dotenv/config'
   export const dbName = process.env.DB_NAME || 'libreria';
   export const dbPort = process.env.DB_PORT || 3309;*/
 
-  export const config = {URLENDPOINT:process.env.URLENDPOINT ||'http://localhost:3010/api/'}
+  export const config = {URLENDPOINT:process.env.URLENDPOINT ||'https://backendnode-production-214f.up.railway.app/api/'}
 
 
