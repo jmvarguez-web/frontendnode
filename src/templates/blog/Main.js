@@ -24,68 +24,6 @@ const Cardband = styled.div`
       }
     `;
 
-const CardArticle = styled.article`
-  padding: 20px;
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`;
-const CardH1 = styled.h1`
-  font-size: 20px;
-  margin: 0;
-  color: #999;
-`;
-
-const CardThumb = styled.div`
-  padding-bottom: 60%;
-  background: #121212;
-  background-image: url(${props => props.backgroundImage});
-  background-size: cover;
-  background-position: center center;
-  transition: transform 0.3s;
-  &:hover {
-    -webkit-transform: rotateY(180deg);
-    -webkit-transform-style: preserve-3d;
-    transform: rotateY(180deg);
-    transform-style: preserve-3d;}
-`;
-const Carditem1 = styled.div`
-box-shadow: 0 0 2px #1586fb;
-
-overflow: hidden;
-transition: all 0.3s cubic-bezier(0.25, 0.1, 0.58, 1);
-
-  &:hover {
-    transform: translate(0px, -5px);
-    cursor: pointer;
-  }
-
-    @media (min-width: 60em) {
-      grid-column: 1 / span 2;
-      
-      h1 {
-        font-size: 24px;
-      }
-    }
-    `;  
-    
-    const Carditem = styled.div`
-    box-shadow: 0 0 2px #1586fb;
-background: #121212;
-overflow: hidden;
-        h1 {
-            font-size: 24px;
-        }
-        transition: all 0.3s cubic-bezier(0.25, 0.1, 0.58, 1);
-
-  &:hover {
-    transform: translate(0px, -5px);
-    cursor: pointer;
-  }
-
-        `; 
-
     
 function Main() {
 
