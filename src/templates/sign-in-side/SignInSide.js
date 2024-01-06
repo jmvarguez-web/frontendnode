@@ -133,15 +133,21 @@ export default function SignInSide() {
             //window.location.href = '/login';
           })
           .catch(error => {
-            console.log(error.response.data.message);
+            //console.log(error.response.data.message);
+            if(error.code==="ERR_NETWORK"){
+              setMensajeAccion("ERROR DE RED, NO SE PUEDE ESTABLECER UNA CONEXIÓN CON EL SERVIDOR");
+
+            }else{
             if(error.response.data.errors){
             setErrores(error.response.data.errors || []);}
             if(error.response.data.message){
               setMensajeAccion(error.response.data.message);
             }else{
             setMensajeAccion("Se genero un error");}
+            } 
+
             setOpenAlert(true);
-            setseverityAlert("warning");                  
+            setseverityAlert("warning");                 
           });
       };
 
