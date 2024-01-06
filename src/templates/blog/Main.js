@@ -1,5 +1,4 @@
-import React, { useState,useEffect } from "react";
-import axios from "axios";
+import React from "react";
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
@@ -27,35 +26,6 @@ const Cardband = styled.div`
     
 function Main() {
 
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
- 
-    const apiUrl = 'https://www.alphavantage.co/query'; // Reemplaza con la URL de tu API
-  
-    const params = {
-      function: 'NEWS_SENTIMENT',
-      ttopics:'technology',
-      sort:'RELEVANCE',
-      apikey:'H5NY3OH2P1380QUL',
-      limit: '5',
-    };
-
-   
-
-    // Realizar la solicitud GET con Axios
-    axios.get(apiUrl, {
-      params: params,
-  
-    })
-    .then((response) => {
-      setData(response.data.feed);
-     
-    })
-    .catch((error) => {
-      console.error(' axios Error al realizar la solicitud:', error);
-    });
-  }, []);
   return (
     <Grid
       item
